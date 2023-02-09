@@ -65,7 +65,7 @@ public class Homework01 {
         WebElement email=  driver.findElement(By.xpath("//*[@name='customers_email_address']"));
         driver.findElement(By.className("headerBarContent")).click();
         email.clear();
-        email.sendKeys("sehrigokcan@gmail.com");
+        email.sendKeys("sehrigokcann@gmail.com");
 
 //        12.Company bilgileri içindeki Company name textbox kutusuna şirket ismini
 //        girer.

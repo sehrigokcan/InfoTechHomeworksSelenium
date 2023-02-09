@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Homework01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Homework01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Homework01.testName">
-    <configuration name="Homework01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksTestNG" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework01" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Homework02">
     <configuration name="Homework01.testName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksTestNG" />
       <option name="PACKAGE_NAME" value="" />
@@ -67,10 +60,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Homework02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework02" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework02.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework02" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework02.testAssertFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework02" />
+      <option name="METHOD_NAME" value="testAssertFalse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework02.testAssertTrue" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework02" />
+      <option name="METHOD_NAME" value="testAssertTrue" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Homework02" />
+        <item itemvalue="TestNG.Homework02.testAssertFalse" />
+        <item itemvalue="TestNG.Homework02.loginTest" />
+        <item itemvalue="TestNG.Homework02.testAssertTrue" />
         <item itemvalue="TestNG.Homework01.testName" />
-        <item itemvalue="TestNG.Homework01" />
       </list>
     </recent_temporary>
   </component>
