@@ -147,18 +147,18 @@ public void loginTest() throws InterruptedException {
 
     //Acilan sayfada ilgili alanlari doldurur
     WebElement email= Driver.getDriver().findElement(By.id("user[email]"));
-    email.sendKeys(emailLogin);
+    email.sendKeys(ConfigReader.getProperty("emailLogin"));
 
 
     WebElement password= Driver.getDriver().findElement(By.id("user[password]"));
-    password.sendKeys(passwordLogin);
+    password.sendKeys(ConfigReader.getProperty("passwordLogin"));
 
     WebElement signUpButton= Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
     signUpButton.click();
 
     // Kullanici basarili sekilde kaydolur
     WebElement dashboard= Driver.getDriver().findElement(By.xpath("//button[@class='dropdown__toggle-button']"));
-    Assert.assertTrue(dashboard.getText().contains(loginFirstName));
+    Assert.assertTrue(dashboard.getText().contains(ConfigReader.getProperty("loginFirstName")));
 
     dashboard.click();
     WebElement signOut= Driver.getDriver().findElement(By.partialLinkText("Sign Out"));
@@ -167,6 +167,6 @@ public void loginTest() throws InterruptedException {
 
 @AfterMethod
 public void testAfter(){
-    //Driver.closeDriver();
+    Driver.closeDriver();
 }
 }
