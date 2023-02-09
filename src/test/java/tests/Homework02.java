@@ -137,9 +137,6 @@ public void testAssertTrue(){
 
 @Test
 public void loginTest() throws InterruptedException {
-    String emailLogin="sehrigokcan@gmail.com";
-    String passwordLogin="Nemo5775.";
-    String loginFirstName= "Sehri";
 
     //Kullanici Sign in butonuna tiklar
     WebElement signInButton= Driver.getDriver().findElement(By.partialLinkText("Sign In"));
