@@ -86,4 +86,9 @@ public class Driver {
             driver = null;
         }
     }
+    public static void wait(int second) throws InterruptedException {
+
+        Thread.sleep(second*1000);
+
+    }
 }
