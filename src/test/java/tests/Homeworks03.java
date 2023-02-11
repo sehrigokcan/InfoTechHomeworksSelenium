@@ -1,15 +1,14 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBase;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class Homeworks03 extends TestBase {
@@ -45,12 +44,16 @@ public class Homeworks03 extends TestBase {
      String metin= Driver.getDriver().findElement(By.xpath("(//*[@class='ktemvl-1 hSsmQw'])[2]")).getText();
 
      // Ebaya gitmek icin yeni bir sekme ac
-     ((JavascriptExecutor)Driver.getDriver()).executeScript("window.open('https://www.ebay.com', '_blank');");
+    // ((JavascriptExecutor)Driver.getDriver()).executeScript("window.open('https://www.ebay.com', '_blank');");
+     Driver.getDriver().switchTo().newWindow(WindowType.TAB);
+     Driver.getDriver().get(ConfigReader.getProperty("ebayUrl"));
      wait(2);
 
-     Set<String> handles = Driver.getDriver().getWindowHandles();
+     List<String> handless= new ArrayList<>(Driver.getDriver().getWindowHandles());
+     Driver.getDriver().switchTo().window(handless.get(1));
 
-     Driver.getDriver().switchTo().window(handles.toArray()[1].toString());
+//     Set<String> handles = Driver.getDriver().getWindowHandles();
+//     Driver.getDriver().switchTo().window(handles.toArray()[1].toString());
 
      // Metni searchboxa yapistir ve arama tusuna bas
      Driver.getDriver().findElement(By.id("gh-ac")).sendKeys(metin, Keys.ENTER);
@@ -59,12 +62,9 @@ public class Homeworks03 extends TestBase {
 
     String expectedPrice= Driver.getDriver().findElement(By.xpath("(//*[@class='s-item__price'])[2]")).getText();
     String actualPrice = "$17.22";
+
      // Assertion
      Assert.assertEquals(actualPrice,expectedPrice);
-
-
-
-
 
  }
 }

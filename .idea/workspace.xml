@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homeworks03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Homeworks03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Homeworks03.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework02.testAssertTrue" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Homeworks03.test1 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksTestNG" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +105,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework02" />
-      <option name="METHOD_NAME" value="testAssertTrue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homeworks03" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Homeworks03.test1" />
+        <item itemvalue="TestNG.Homeworks03.test1 (1)" />
         <item itemvalue="TestNG.Homework02" />
         <item itemvalue="TestNG.Homework02.testAssertFalse" />
         <item itemvalue="TestNG.Homework02.loginTest" />
-        <item itemvalue="TestNG.Homework02.testAssertTrue" />
       </list>
     </recent_temporary>
   </component>
