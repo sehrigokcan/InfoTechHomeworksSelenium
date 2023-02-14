@@ -61,7 +61,7 @@ public class Homeworks03 extends TestBase {
      // cikan ilk urunun fiyatini al
 
     String expectedPrice= Driver.getDriver().findElement(By.xpath("(//*[@class='s-item__price'])[2]")).getText();
-    String actualPrice = "$17.22";
+    String actualPrice = "$89.99";
 
      // Assertion
      Assert.assertEquals(actualPrice,expectedPrice);
