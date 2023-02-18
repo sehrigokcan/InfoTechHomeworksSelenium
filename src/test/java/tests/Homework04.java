@@ -12,7 +12,6 @@ import java.util.List;
 
 public class Homework04 extends TestBase {
 
-
 WebTablePage webTablePage= new WebTablePage();
     @Test
     public void test01() throws InterruptedException {

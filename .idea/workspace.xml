@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DragAndDropPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/AllPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ReUsableMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Homework04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Homework04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Homework04">
+  <component name="RunManager" selected="TestNG.Homework05.test02">
     <configuration name="Homework04" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksTestNG" />
       <extension name="coverage">
@@ -77,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework04.test02" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Homework05" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksTestNG" />
       <extension name="coverage">
         <pattern>
@@ -85,63 +92,44 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Homework04" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework04" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework05" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework05.dragAndDrop" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework05" />
+      <option name="METHOD_NAME" value="dragAndDrop" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework05.test02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Homework05" />
       <option name="METHOD_NAME" value="test02" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homework04.test03" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksTestNG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.Homework04" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework04" />
-      <option name="METHOD_NAME" value="test03" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homeworks03.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksTestNG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homeworks03" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homeworks03.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksTestNG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.Homework04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homeworks03" />
-      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Homework04.test03" />
+        <item itemvalue="TestNG.Homework05.test02" />
+        <item itemvalue="TestNG.Homework05" />
+        <item itemvalue="TestNG.Homework05.dragAndDrop" />
         <item itemvalue="TestNG.Homework04" />
-        <item itemvalue="TestNG.Homework04.test02" />
         <item itemvalue="TestNG.Homework04.test01" />
-        <item itemvalue="TestNG.Homeworks03.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -198,5 +186,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/Homework05.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
