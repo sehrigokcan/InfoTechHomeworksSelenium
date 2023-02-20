@@ -42,6 +42,8 @@ public class Homework05 extends TestBase {
         String actualValue2 = allPages.dragAndDropPage.creditSideAccount.getText();
         softAssert.assertEquals(expectedValue, actualValue2);
 
+        softAssert.assertAll();
+
         Assert.assertTrue(allPages.dragAndDropPage.perfectButton.isDisplayed());
 
 
@@ -54,15 +56,16 @@ public class Homework05 extends TestBase {
         List<Double> degerler= new ArrayList<Double>();
         for (int i=1;i<=4;i++) {
             String deger= String.valueOf(Driver.getDriver().findElement(By.xpath(ReUsableMethods.findLocationOfElementInSpecificTableCell(1,i,4))).getText());
-            String yeniDeger= deger.replace("$","").replace(".","");
+            String yeniDeger= deger.substring(1,deger.indexOf("."));
             System.out.println(yeniDeger);
 
             Double degerD= Double.valueOf(yeniDeger) ;
-            if(degerD>5000) {
+            if(degerD>50) {
                 degerler.add(degerD);
             }
         }
+
         System.out.println(degerler);
-        Assert.assertTrue(degerler.contains(10000.0));
+        Assert.assertTrue(degerler.contains(100.0));
     }
 }
