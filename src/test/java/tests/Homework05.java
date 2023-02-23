@@ -26,7 +26,6 @@ public class Homework05 extends TestBase {
         actions.clickAndHold(allPages.dragAndDropPage.bank).moveToElement(allPages.dragAndDropPage.debitSideAccount).release().build().perform();
         Driver.wait(2);
 
-
         actions.dragAndDrop(allPages.dragAndDropPage.sourceValue50001, allPages.dragAndDropPage.targetInDepitAmountRight).build().perform();
         Driver.wait(2);
 
