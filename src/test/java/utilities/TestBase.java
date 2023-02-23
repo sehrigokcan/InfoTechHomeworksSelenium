@@ -18,7 +18,7 @@ public class TestBase {
         // Ancak yaptığımız örnek testlerden dolayı birçok farklı link ile çalışıyoruz. Sabit bir proje linkimiz olmadığı için aşağıdaki kod satırı yoruma alınmıştır.
         // Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
     }
-    @AfterMethod
+    @AfterClass
     public void tearDown() throws InterruptedException {
         wait(2);
         Driver.closeDriver();
