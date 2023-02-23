@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/CommenSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ExcelUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Homework06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Homework06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Homework06.test02" />
         <item itemvalue="TestNG.Homework06" />
         <item itemvalue="TestNG.Homework06.test01" />
         <item itemvalue="TestNG.Homework06.test03" />
-        <item itemvalue="TestNG.Homework06.test02" />
         <item itemvalue="TestNG.Homework06.testName (1)" />
       </list>
     </recent_temporary>

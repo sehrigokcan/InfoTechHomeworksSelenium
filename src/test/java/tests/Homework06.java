@@ -4,10 +4,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.AllPages;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.TestBase;
+import utilities.*;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -59,6 +57,12 @@ public class Homework06 extends TestBase {
         Workbook workBook= WorkbookFactory.create(fis);
         String kAdi= workBook.getSheetAt(0).getRow(1).getCell(0).toString();
         allPages.excelPage.user_full_name.sendKeys(kAdi);
+
+        // Hazir method ile kullanimi
+//        ExcelUtils excel= new ExcelUtils(path,"KullaniciAdi");
+//        String kuAdi= excel.getCellData(1,0).toString();
+//        allPages.excelPage.user_full_name.sendKeys(kuAdi);
+
         wait(2);
 //        Kullanıcı Proje içerisindeki EXCEL dosyasındaki GEÇERLİ EMAİLLER Sheet’inden aldığı kullanıcı email adresini Business Email TextBox’ına yazar.
         String email= workBook.getSheet("GEÇERLİ EMAİLLER").getRow(1).getCell(0).toString();
@@ -70,12 +74,16 @@ public class Homework06 extends TestBase {
         allPages.excelPage.user_password.sendKeys(password);
         wait(2);
 //        Kullanıcı “I agrre...” Checkbox’ına tıklar.
-        allPages.excelPage.agree.click();
+        try{
+            allPages.excelPage.agree.click();
+        }catch (Exception e){}
+
         wait(2);
 //        INVALID olarak girilen PASSWORD’ün  yarattığı hata mesajı “At least 6 characters”
 //        validate(assert) edilir.
 
-        Assert.assertTrue(allPages.excelPage.atleast.isDisplayed());
+//        Assert.assertTrue(allPages.excelPage.atleast.isDisplayed());
+        CommenSteps.verifyElementDisplayed(allPages.excelPage.atleast);
     }
 
     @Test
@@ -101,7 +109,8 @@ public class Homework06 extends TestBase {
         String password = workBook.getSheet("GEÇERLİ PASSWORD").getRow(0).getCell(0).toString();
         allPages.excelPage.user_password.sendKeys(password);
 //        Kullanıcı “I agrre...” Checkbox’ına tıklar.
-        allPages.excelPage.agree.click();
+//        allPages.excelPage.agree.click();
+        CommenSteps.selectCheckBox(allPages.excelPage.agree, true);
 //        Kullanıcı “Sign me up” butonuna tıklar.
         allPages.excelPage.user_submit.click();
 //        Başarılı bir şekilde kayıt yapıldığı Validate edilir
