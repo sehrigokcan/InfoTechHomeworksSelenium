@@ -16,74 +16,49 @@ import java.time.Duration;
 
 public class Driver {
 
-    public static WebDriver driver; // selenium dependency bunun icin gerekli
+    private static WebDriver driver;
 
-    public static WebDriver getDriver(){
-
-        if(driver==null){
-
-            switch (ConfigReader.getProperty("browser")){
-
-                case "chrome":
-                default:
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("start-maximized");
-                    //WebDriverManager.chromedriver().setup(); // bonogarcia dependency bunun için gerekli
-                    driver = new ChromeDriver(chromeOptions);
-                    System.out.println("CHROME WORKS!!!");
-                    break;
-                case "chrome-headless":
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
-                    driver.manage().window().maximize();
-                    System.out.println("CHROME-HEADLESS WORKS!!!");
-                    break;
-                case "firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.addArguments("start-maximized");
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver(firefoxOptions);
-                    System.out.println("FIREFOX WORKS!!!");
-                    break;
-                case "firefox-headless":
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
-                    driver.manage().window().maximize();
-                    System.out.println("FIREFOX-HEADLESS WORKS!!!");
-                    break;
-                case "edge":
-                    EdgeOptions edgeOptions = new EdgeOptions();
-                    edgeOptions.addArguments("start-maximized");
-                    WebDriverManager.edgedriver().setup();
-                    driver= new EdgeDriver(edgeOptions);
-                    System.out.println("EDGE WORKS!!!");
-                    break;
-                case "ie":
-                    if (!System.getProperty("os.name").toLowerCase().contains("windows"))
-                        throw new WebDriverException("Your OS doesn't support Internet Explorer");
-                    WebDriverManager.iedriver().setup();
-                    driver = new InternetExplorerDriver();
-                    driver.manage().window().maximize();
-                    break;
-                case "safari":
-                    if (!System.getProperty("os.name").toLowerCase().contains("mac"))
-                        throw new WebDriverException("Your OS doesn't support Safari");
-                    WebDriverManager.getInstance(SafariDriver.class).setup();
-                    driver = new SafariDriver();
-                    driver.manage().window().maximize();
-                    break;
+    private static int timeout = 5;
+    //What?=>It is just to create, initialize the driver instance.(Singleton driver)
+    //Why?=>We don't want to create and initialize the driver when we don't need
+    //We will create and initialize the driver when it is null
+    //We can use Driver class with different browser(chrome,firefox,headless)
+    private Driver() {
+        //we don't want to create another abject. Singleton pattern
+    }
+    //to initialize the driver we create a static method
+    public static WebDriver getDriver() {
+        //create the driver if and only if it is null
+        if (driver == null) {
+            String browser = ConfigReader.getProperty("browser");
+            if ("chrome".equals(browser)) {
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+            } else if ("firefox".equals(browser)) {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+            } else if ("edge".equals(browser)) {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+            } else if ("safari".equals(browser)) {
+                WebDriverManager.getInstance(SafariDriver.class).setup();
+                driver = new SafariDriver();
+            } else if ("chrome-headless".equals(browser)) {
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
             }
         }
-        //driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        //  driver.manage().window().maximize();
         return driver;
     }
-
     public static void closeDriver() {
-        if(driver!=null){
-            driver.quit();
-            driver = null;
+        if (driver != null) {//if the driver is pointing chrome
+            driver.quit();//quit the driver
+            driver = null;//set it back to null to make sure driver is null
+            // so I can initialize it again
+            //This is important especially you do cross browser testing(testing with
+            // multiple browser like chrome, firefox, ie etc.)
         }
     }
     public static void wait(int second) throws InterruptedException {

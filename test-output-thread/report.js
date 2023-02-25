@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"d53c2733-2027-4ce0-b3bd-bbf804c9b0c0","feature":"Kullanici aradigi kelimeye iliskin sonuclarla karsilasir","scenario":"Kullanici verilen degerlere gore yapilan aramalara uygun sonuclar verir","start":1677351385793,"group":1,"content":"","tags":"@telerik,","end":1677351401356,"className":"passed"},{"id":"89f216d6-b5be-404a-96d1-43173a3f313b","feature":"Kullanici aradigi kelimeye iliskin sonuclarla karsilasir","scenario":"Kullanici verilen degerlere gore yapilan aramalara uygun sonuclar verir","start":1677351401365,"group":1,"content":"","tags":"@telerik,","end":1677351415918,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
+});

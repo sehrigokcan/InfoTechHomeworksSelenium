@@ -35,11 +35,11 @@ public class Homework05 extends TestBase {
         SoftAssert softAssert= new SoftAssert();
 
         String expectedValue = "5000";
-        String actualValue = allPages.dragAndDropPage.debitSideAccount.getText();
+        String actualValue = allPages.dragAndDropPage.sourceValue50001.getText();
         softAssert.assertEquals(actualValue, expectedValue);
 
-        String actualValue2 = allPages.dragAndDropPage.creditSideAccount.getText();
-        softAssert.assertEquals(expectedValue, actualValue2);
+        String actualValue2 = allPages.dragAndDropPage.sourceValue50002.getText();
+        softAssert.assertEquals( actualValue2,expectedValue);
 
         softAssert.assertAll();
 

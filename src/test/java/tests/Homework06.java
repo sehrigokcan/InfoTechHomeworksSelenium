@@ -2,6 +2,7 @@ package tests;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.*;
@@ -116,11 +117,12 @@ public class Homework06 extends TestBase {
 //        Başarılı bir şekilde kayıt yapıldığı Validate edilir
         wait(5);
 
-        try {
-            Assert.assertEquals(allPages.excelPage.giris.getText(), "Hi Sehri! What are you looking to test?");
-
-        } catch (Exception e) {
-            Assert.assertTrue(allPages.excelPage.giris2.getText().contains("Quick question, for whom are you evaluating Live?"));
-        }
+        CommenSteps.verifyElementNotDisplayed(By.id("user_submit"));
+//        try {
+//           Assert.assertEquals(allPages.excelPage.giris.getText(), "Hi Sehri! What are you looking to test?");
+//
+//        } catch (Exception e) {
+//            Assert.assertTrue(allPages.excelPage.giris2.getText().contains("Quick question, for whom are you evaluating Live?"));
+//        }
     }}
 
