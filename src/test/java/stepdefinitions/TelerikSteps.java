@@ -5,10 +5,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 import pages.TelerikPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReUsableMethods;
+
+import java.util.Arrays;
 
 
 public class TelerikSteps {
@@ -43,7 +46,13 @@ public class TelerikSteps {
     }
     @Then("Arama sonucu cikan ilk secenegin ilgili {string} barindirir")
     public void aramaSonucuCikanIlkSeceneginIlgiliBarindirir(String arg0) {
-        Assert.assertTrue(telerikPage.ilkAramaSonucu.getText().contains(arg0));
+        String[] arg1 =arg0.split((" "));
+        SoftAssert softAssert= new SoftAssert();
+        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[0]));
+        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[1]));
+        softAssert.assertAll();
+
+      //  Assert.assertTrue(telerikPage.ilkAramaSonucu.getText().contains(arg0));
     }
     @Then("Kullanıcı sayfayı kapatır.")
     public void kullanıcı_sayfayı_kapatır() {

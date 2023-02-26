@@ -29,4 +29,6 @@ public class TelerikPage {
     public WebElement ilkAramaSonucu;
 
 
+    @FindBy (xpath = "//*[@id='js-results-wrapper']/div[3]/ul/li[1]/h4/a")
+    public WebElement ilkAramaSonucText;
 }
