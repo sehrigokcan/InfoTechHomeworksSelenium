@@ -31,4 +31,13 @@ public class TelerikPage {
 
     @FindBy (xpath = "//*[@id='js-results-wrapper']/div[3]/ul/li[1]/h4/a")
     public WebElement ilkAramaSonucText;
+
+    @FindBy (linkText = "Pricing")
+    public WebElement pricing;
+
+    @FindBy (xpath = "//*[@class='Pricings-button']/th/div/a")
+    public WebElement buyNowButton;
+
+    @FindBy (xpath = "(//*[@class=\"TK-Counter TK-Counter--SC TK-Counter--Visible\"])")
+    public WebElement sepet;
 }

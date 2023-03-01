@@ -18,9 +18,8 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources",
         glue = "stepdefinitions",
-        tags = "@telerik",
+        tags = "@telerik2",
         dryRun = false
-
 
 )
 public class runner {

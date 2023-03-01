@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"a5be1527-1677-4ce2-a2bb-dc7474590ec0","feature":"Kullanici aradigi kelimeye iliskin sonuclarla karsilasir","scenario":"Kullanici verilen degerlere gore yapilan aramalara uygun sonuclar verir","start":1677417907192,"group":1,"content":"","tags":"@telerik,","end":1677417924608,"className":"passed"},{"id":"96fdee61-e2ea-4ac1-a1c9-5601210b14bb","feature":"Kullanici aradigi kelimeye iliskin sonuclarla karsilasir","scenario":"Kullanici verilen degerlere gore yapilan aramalara uygun sonuclar verir","start":1677417924619,"group":1,"content":"","tags":"@telerik,","end":1677417940776,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"9d1d53d8-c2e1-48f1-a007-37397b61ae56","feature":"Kullanici sepete urun ekleyebilir","scenario":"Kullanici sepete ekledigi urunun fiyatini gorebilir","start":1677678651796,"group":1,"content":"","tags":"@telerik2,","end":1677678687395,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

@@ -2,6 +2,7 @@ Feature: Kullanici aradigi kelimeye iliskin sonuclarla karsilasir
 
   @telerik
   Scenario Outline: Kullanici verilen degerlere gore yapilan aramalara uygun sonuclar verir
+
     Given Kullanici sayfaya gider
     When Kullanici Cookie icin gelen seceneklerden Accept and Close’a tiklar
     And Kullanici ust menu bar dan arama simgesine tıklar
@@ -14,3 +15,7 @@ Feature: Kullanici aradigi kelimeye iliskin sonuclarla karsilasir
       | deger        |
       | keyword test|
       | data testing|
+
+
+
+

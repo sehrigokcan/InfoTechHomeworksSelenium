@@ -1,0 +1,82 @@
+Soru 1: Data Driven Development nedir açıklayınız?
+Data-driven development, veriye dayalı geliştirme anlamına gelir. Bu yaklaşım, bir yazılım projesinin geliştirilmesi sürecinde veri toplama, analiz etme ve bunları kullanarak karar verme işlemlerini içerir.
+Bu yaklaşımın temel amacı, yazılım geliştirme sürecindeki kararları ve eylemleri verilerle desteklemektir. Bu sayede daha doğru, öngörülebilir ve ölçülebilir sonuçlar elde edilir.
+Veri odaklı geliştirme, aşağıdaki adımları içerir:
+Veri toplama: Yazılım geliştirme sürecinde kullanılacak verilerin toplanması ve depolanması.
+Veri analizi: Toplanan verilerin analiz edilerek, kullanılacak verilerin belirlenmesi.
+Veri kullanımı: Belirlenen verilerin kullanılarak yazılım geliştirme sürecindeki kararların alınması ve uygulanması.
+Veri odaklı geliştirme, geliştiricilere ve ekiplere işlerini yapmak için daha güçlü bir yol sunarak, daha hızlı ve daha verimli bir yazılım geliştirme süreci sağlayabilir.
+
+Soru 2: Test Driven Development nedir açıklayınız?
+Test odaklı geliştirme, kodu test etmek ve bağımlılıkları koddan ayırmak için Birim Testleri yazarak yapılır.
+Bu stratejide önemli olan kod yazılmadan önce testleri yazmaktır.
+
+Soru 3: Keyword Driven Testing nedir?
+Keyword driven testing çatısı (yada Table Driven Testing) test adımlarının veya otomasyon scriptlerinin geliştirilmesini,
+ test senaryolarından veya ilgili iş akışından ayırmayı sağlayan dolayısı ile karmaşıklığı azaltan ve modülerliği artıran bir yaklaşımdır.
+ Hazırlanan Keywordler (Kelimeler) farklı parametreler ile birden fazla test senaryosunda kullanılabilir hale gelir.
+ Bir anlamda programlama dillerinde yazılan kodların tekrar kullanılabilmesini sağlayan fonksiyon veya metotlara benzer.
+  Kelime temelli test yapısı, data driven test yapısına çok benzer.
+Fakat bu yaklaşımda test sistemi veriler yerine oluşturulan kelimeler ve ilgili parametreleri ile beslenir.
+
+Soru 4: Behavior Driven Testing nedir? Buna uygun en popüler iki örnek nedir?
+Davranış Odaklı Geliştirme (BDD), genellikle Cucumber kullanılarak uygulanan, insanlar tarafından kolayca anlaşılabilecek
+bir biçimde otomatikleştirilmiş testlerin oluşturulmasını ve yürütülmesini kolaylaştıran bir çerçevedir. Cucumber
+
+Soru 5: Cucumber’da Hook Class ne maksatla oluşturulmuştur?
+her senaryodan önce veya sonra veya tüm test paketinden önce veya sonra gibi test yürütme sırasında belirli noktalarda yürütülen yöntemlerdir.
+
+
+
+
+
+
+
+
+
+BDD | Behaviour Driven Development| Cucumber
+Behaviour Driven Development (BDD) is a framework, often implemented using Cucumber, that facilitates the creation and execution of automated tests in a format that can be easily understood by humans.
+Cucumber utilizes the Gherkin language, which is both straightforward and robust, and employs a particular syntax that incorporates a series of keywords and structures.
+These features enable testers, developers, and non-technical stakeholders such as business analysts to define and automate test cases in an unambiguous and concise manner.
+Here is an example of Gherkin syntax:
+Feature: Login functionality
+ As a user of the system
+ I want to be able to login to the application
+ So that I can access the system and perform actions
+ Scenario: Successful login
+   Given I am on the login page
+   When I enter valid login credentials
+   And I click the login button
+   Then I should be redirected to the dashboard page
+ Scenario: Invalid login
+   Given I am on the login page
+   When I enter invalid login credentials
+   And I click the login button
+   Then I should see an error message displayed on the login page
+Cucumber provides several important modules that help to create, organize, and execute automated tests. Some of these modules are:
+Feature files: Feature files contain the Gherkin syntax that describes the behaviour of the application. Each feature file typically represents a specific feature or functionality of the application
+Step definitions: Step definitions are the code implementation of the steps described in the feature files. These are used to map each step in the feature file to a specific action or behaviour that should be taken during the test execution. Step definitions are written in a programming language, such as Java
+Hooks: Hooks are methods that are executed at specific points during the test execution, such as before or after each scenario, or before or after the entire test suite.
+Data tables: Data tables are used to pass tabular data to step definitions in a feature file. This allows testers to parameterize the tests and test different data scenarios.
+Tags: Tags are used to organize and filter scenarios in a feature file. Tags can be used to group scenarios by feature, by priority, by environment, or by any other criteria that is relevant to the test execution.
+Reports: Cucumber provides built-in reporting features that generate test reports in a variety of formats, such as HTML, JSON, or XML. These reports can be used to track test results, identify failing tests, and analyse test performance.
+Overall, these modules provide a powerful set of tools that enable testers, developers, and stakeholders to collaborate and automate software requirements using a structured natural language syntax.
+
+
+
+Turkce
+
+BDD | Davranış Odaklı Geliştirme| Cucumber
+Davranış Odaklı Geliştirme (BDD), genellikle Cucumber kullanılarak uygulanan, insanlar tarafından kolayca anlaşılabilecek
+bir biçimde otomatikleştirilmiş testlerin oluşturulmasını ve yürütülmesini kolaylaştıran bir çerçevedir.
+Cucumber, hem basit hem de sağlam olan Gherkin dilini kullanır ve bir dizi anahtar sözcük ve yapı içeren belirli bir sözdizimini kullanır.
+Bu özellikler, test uzmanlarının, geliştiricilerin ve iş analistleri gibi teknik olmayan paydaşların test senaryolarını net ve özlü bir şekilde tanımlamasını ve otomatikleştirmesini sağlar.
+
+Cucumber, otomatik testler oluşturmaya, düzenlemeye ve yürütmeye yardımcı olan birkaç önemli modül sağlar. Bu modüllerden bazıları şunlardır:
+Feature dosyaları: Özellik dosyaları, uygulamanın davranışını açıklayan Gherkin sözdizimini içerir. Her özellik dosyası tipik olarak uygulamanın belirli bir özelliğini veya işlevselliğini temsil eder.
+Step Definitions: Adım tanımları, özellik dosyalarında açıklanan adımların kod uygulamasıdır. Bunlar, özellik dosyasındaki her adımı, test yürütme sırasında gerçekleştirilmesi gereken belirli bir eylem veya davranışla eşlemek için kullanılır. Adım tanımları, Java gibi bir programlama dilinde yazılır.
+Hooks: Kancalar, her senaryodan önce veya sonra veya tüm test paketinden önce veya sonra gibi test yürütme sırasında belirli noktalarda yürütülen yöntemlerdir.
+Data tables: Veri tabloları, tablo verilerini bir özellik dosyasındaki adım tanımlarına geçirmek için kullanılır. Bu, test uzmanlarının testleri parametreleştirmesine ve farklı veri senaryolarını test etmesine olanak tanır.
+Tags: Etiketler, bir özellik dosyasındaki senaryoları düzenlemek ve filtrelemek için kullanılır. Etiketler, senaryoları özelliğe, önceliğe, ortama veya test yürütmeyle ilgili diğer kriterlere göre gruplandırmak için kullanılabilir.
+Reports: Salatalık, HTML, JSON veya XML gibi çeşitli biçimlerde test raporları oluşturan yerleşik raporlama özellikleri sağlar. Bu raporlar, test sonuçlarını izlemek, başarısız testleri belirlemek ve test performansını analiz etmek için kullanılabilir.
+Genel olarak bu modüller, test uzmanlarının, geliştiricilerin ve paydaşların yapılandırılmış bir doğal dil sözdizimi kullanarak işbirliği yapmasına ve yazılım gereksinimlerini otomatikleştirmesine olanak tanıyan güçlü bir araç seti sağlar.

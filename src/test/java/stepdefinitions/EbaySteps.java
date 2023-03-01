@@ -35,8 +35,9 @@ public class EbaySteps {
         ebayPage.w10link.click();
     }
     @Then("Cikan seceneklerden en usteki urunun Windows {int} ozelligi barindirdigi dogrulanir")
-    public void cikan_seceneklerden_en_usteki_urunun_windows_ozelligi_barindirdigi_dogrulanir(Integer int1) {
+    public void cikan_seceneklerden_en_usteki_urunun_windows_ozelligi_barindirdigi_dogrulanir(Integer int1) throws InterruptedException {
         Assert.assertTrue(ebayPage.text.getText().contains("Windows 10"));
+        Driver.wait(5);
     }
     @Then("Kullanici sayfayi kapatir")
     public void kullanici_sayfayi_kapatir() {

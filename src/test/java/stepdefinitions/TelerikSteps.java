@@ -45,13 +45,16 @@ public class TelerikSteps {
         telerikPage.searchButton.click();
     }
     @Then("Arama sonucu cikan ilk secenegin ilgili {string} barindirir")
-    public void aramaSonucuCikanIlkSeceneginIlgiliBarindirir(String arg0) {
+    public void aramaSonucuCikanIlkSeceneginIlgiliBarindirir(String arg0) throws InterruptedException {
         String[] arg1 =arg0.split((" "));
         SoftAssert softAssert= new SoftAssert();
-        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[0]));
-        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[1]));
+        for (String arg: arg1) {
+            softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg));
+        }
+//        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[0]));
+//        softAssert.assertTrue(telerikPage.ilkAramaSonucText.getText().toLowerCase().contains(arg1[1]));
         softAssert.assertAll();
-
+        Driver.wait(5);
       //  Assert.assertTrue(telerikPage.ilkAramaSonucu.getText().contains(arg0));
     }
     @Then("Kullanıcı sayfayı kapatır.")
@@ -60,5 +63,21 @@ public class TelerikSteps {
     }
 
 
+    @And("Kullanici bir paketi Buy Now ile sepete ekler")
+    public void kullaniciBirPaketiBuyNowIleSepeteEkler() {
+        telerikPage.buyNowButton.click();
+    }
 
+    @And("Kullanici Pricing linkine tiklar")
+    public void kullaniciPricingLinkineTiklar() {
+        telerikPage.pricing.click();
+    }
+
+    @Then("Kullanici sepet simgesi uzerindeki rakami dogrular")
+    public void kullaniciSepetSimgesiUzerindekiRakamiDogrular() {
+        telerikPage.ustbarButton.click();
+        String expected=telerikPage.sepet.getText();
+        String actual= "1";
+        Assert.assertEquals(expected,actual);
+    }
 }
