@@ -18,10 +18,12 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources",
         glue = "stepdefinitions",
-        tags = "@telerik2",
+        tags = "@ikinci",
         dryRun = false
 
 )
 public class runner {
 
 }
+
+

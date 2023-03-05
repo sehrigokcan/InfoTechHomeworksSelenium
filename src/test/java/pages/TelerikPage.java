@@ -10,6 +10,9 @@ public class TelerikPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy (linkText = "Delete Item")
+    public WebElement deleteItem;
+
     @FindBy (id="onetrust-accept-btn-handler")
     public WebElement acceptAndCloseButton;
 
@@ -38,6 +41,6 @@ public class TelerikPage {
     @FindBy (xpath = "//*[@class='Pricings-button']/th/div/a")
     public WebElement buyNowButton;
 
-    @FindBy (xpath = "(//*[@class=\"TK-Counter TK-Counter--SC TK-Counter--Visible\"])")
+    @FindBy (xpath = "//*[@id='js-tlrk-nav-drawer']/ul[2]/li[2]/a/span[2]")
     public WebElement sepet;
 }

@@ -49,7 +49,7 @@ public class Driver {
             }
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        //  driver.manage().window().maximize();
+          driver.manage().window().maximize();
         return driver;
     }
     public static void closeDriver() {

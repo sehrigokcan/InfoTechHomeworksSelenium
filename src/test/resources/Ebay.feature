@@ -10,3 +10,4 @@ Feature: Kullanici ebay sitesinden istenilen urunu ve ozelligine gore arama yapa
     Then Cikan seceneklerden en usteki urunun Windows 10 ozelligi barindirdigi dogrulanir
     And Kullanici sayfayi kapatir
 
+

@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Telerik2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Telerik3.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/TelerikPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TelerikPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/EbaySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/EbaySteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TelerikSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TelerikSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Telerik.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Telerik.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Ebay.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Ebay.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +56,26 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.runner">
+    <configuration name="Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Telerik3.feature" />
+      <option name="GLUE" value="stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="InfoTechHomeworksSelenium" />
+      <option name="NAME_FILTER" value="^Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksSelenium" />
       <extension name="coverage">
@@ -85,23 +103,6 @@
       <option name="MAIN_CLASS_NAME" value="tests.Homework05" />
       <option name="METHOD_NAME" value="dragAndDrop" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homework06" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework06" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -147,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.runner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" />
         <item itemvalue="TestNG.Homework05.dragAndDrop" />
         <item itemvalue="TestNG.Homework06.test03" />
         <item itemvalue="TestNG.Homework06.test02" />
-        <item itemvalue="TestNG.Homework06" />
       </list>
     </recent_temporary>
   </component>
