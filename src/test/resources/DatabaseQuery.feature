@@ -1,19 +1,20 @@
-
+@dbQuery
 Feature: Database Query
 
   Background:
     Given user connects to the database
 
-  @dbQuery
+
     Scenario: Toplam ürün sayısını ASSERT edin
       Then toplam urun sayisini assert edin
-
 
       Scenario: Fiyatı en yüksek ürün ASSERT edin.
         Then en yuksek fiyatli urunu assert edin
 
+
       Scenario: Urün isimlerinden birini değiştirin
         And urun isimlerinin birini degistir
+
 
       Scenario: Urünlerin fiyat ortalamasını bulup yazdırın
         And urun isimlerinin fiyat ortalamasini bul
@@ -36,3 +37,5 @@ Feature: Database Query
         And belli fiyatin altindaki urunleri isme ve fiyata gore azalan nitelikte sirala
 
 
+      Scenario: baglantilari kapat
+        And baglantilari kapat

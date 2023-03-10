@@ -1,4 +1,4 @@
-package stepdefinitions;
+package runners;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;

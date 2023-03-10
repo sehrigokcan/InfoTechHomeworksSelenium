@@ -21,49 +21,96 @@ public class DBStepDefinitions {
     public void userConnectsToTheDatabase() throws SQLException {
         connection = DriverManager.getConnection(url, username, password);
         statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-        resultSet = statement.executeQuery("SELECT * FROM urun");
+
+
     }
 
     @Then("toplam urun sayisini assert edin")
     public void toplamUrunSayisiniAssertEdin() throws SQLException {
+        resultSet = statement.executeQuery("SELECT * FROM urun");
         int urunCount = 0;
         while (resultSet.next()) {
             urunCount++;
         }
         System.out.println("Toplam urun sayisi: " + urunCount);
-        Assert.assertEquals(urunCount, 5);
+        Assert.assertEquals(urunCount, 6);
 
     }
 
     @Then("en yuksek fiyatli urunu assert edin")
-    public void enYuksekFiyatliUrunuAssertEdin() {
+    public void enYuksekFiyatliUrunuAssertEdin() throws SQLException {
+        resultSet = statement.executeQuery("SELECT * FROM urun order by price desc");
+        resultSet.first();
+        String urunIsmi= resultSet.getString("name");
+        Assert.assertEquals(urunIsmi, "ayva");
+
     }
 
     @And("urun isimlerinin birini degistir")
-    public void urunIsimlerininBiriniDegistir() {
+    public void urunIsimlerininBiriniDegistir() throws SQLException {
+        String yeniUrunIsmi="ayva";
+        int control= statement.executeUpdate("update urun set name='kavun' where name='karpuz';" );
+        System.out.println(control);
+        Assert.assertTrue(control==1);
     }
 
     @And("urun isimlerinin fiyat ortalamasini bul")
-    public void urunIsimlerininFiyatOrtalamasiniBul() {
+    public void urunIsimlerininFiyatOrtalamasiniBul() throws SQLException {
+        resultSet = statement.executeQuery("SELECT * FROM urun");
+        double toplam=0;
+        while (resultSet.next()) {
+            toplam+=resultSet.getDouble("price");
+        }
+        double ort= toplam/6;
+        System.out.println(" Ortalama:"+ ort);
+
     }
 
     @And("sutun basliklarini degistirip tabloyu yazdir")
-    public void sutunBasliklariniDegistiripTabloyuYazdir() {
+    public void sutunBasliklariniDegistiripTabloyuYazdir() throws SQLException {
+        resultSet = statement.executeQuery("SELECT id AS URUN_ID, name AS URUN_ADI, price AS URUN_FIYAT FROM urun");
+        while (resultSet.next()) {
+            System.out.println(resultSet.getInt("URUN_ID")+"    "+ resultSet.getString("URUN_ADI")+ "     "+resultSet.getDouble("URUN_FIYAT"));
+        }
     }
 
     @And("urun isimlerini buyuk harfle yazdir")
-    public void urunIsimleriniBuyukHarfleYazdir() {
+    public void urunIsimleriniBuyukHarfleYazdir() throws SQLException {
+        resultSet = statement.executeQuery("SELECT Upper(name) AS urun_adi FROM urun");
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("urun_adi"));
+        }
     }
 
     @And("urun isimlerini kucuk harfle yazdir")
-    public void urunIsimleriniKucukHarfleYazdir() {
+    public void urunIsimleriniKucukHarfleYazdir() throws SQLException {
+        resultSet = statement.executeQuery("SELECT Lower(name) AS urun_adi FROM urun");
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("urun_adi"));
+        }
     }
 
     @And("urun isimlerinin ilk harfi buyuk olacak sekilde yazdir")
-    public void urunIsimlerininIlkHarfiBuyukOlacakSekildeYazdir() {
+    public void urunIsimlerininIlkHarfiBuyukOlacakSekildeYazdir() throws SQLException {
+
+                resultSet = statement.executeQuery("SELECT INITCAP(name) AS urun_adi FROM urun");
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("urun_adi"));
+        }
     }
 
     @And("belli fiyatin altindaki urunleri isme ve fiyata gore azalan nitelikte sirala")
-    public void belliFiyatinAltindakiUrunleriIsmeVeFiyataGoreAzalanNitelikteSirala() {
+    public void belliFiyatinAltindakiUrunleriIsmeVeFiyataGoreAzalanNitelikteSirala() throws SQLException {
+        resultSet = statement.executeQuery("SELECT name,price FROM urun order by name,price ASC");
+        while (resultSet.next()) {
+            System.out.println(resultSet.getInt("price")+ "   :   " + resultSet.getString("name"));
+
+        }
+    }
+
+    @And("baglantilari kapat")
+    public void baglantilariKapat() throws SQLException {
+        statement.close();
+        connection.close();
     }
 }
