@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"9072640c-b3cb-4e47-95bf-1159eee59b79","feature":"Kullanicinin sepete urun eklemesi ve silmesi sonucu sepet simgesi uzerindeki urun sayisinin","scenario":"Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur","start":1678018788775,"group":1,"content":"","tags":"@ikinci,","end":1678018832151,"className":"passed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"807ac976-4012-4e8c-b371-9b30c4842a4c","feature":"Database Query","scenario":"Toplam ürün sayısını ASSERT edin","start":1678467827636,"group":1,"content":"","tags":"@dbquery,","end":1678467840788,"className":"failed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[#1,main,5,main]"}]);
 });

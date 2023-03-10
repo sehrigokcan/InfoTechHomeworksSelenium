@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Telerik3.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/DatabaseQuery.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TelerikPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TelerikPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TelerikSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TelerikSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Ebay.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Ebay.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.override.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/formatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +56,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/sehri/IdeaProjects/SeleniumProject/InfoTechHomeworksTestNG/src/test/java/stepdefinitions&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -55,16 +66,16 @@
       <recent name="C:\Users\sehri\IdeaProjects\SeleniumProject\InfoTechHomeworksTestNG\target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.runner">
-    <configuration name="Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.runner (1)">
+    <configuration name="Scenario: Toplam ürün sayısını ASSERT edin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Telerik3.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/DatabaseQuery.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="InfoTechHomeworksSelenium" />
-      <option name="NAME_FILTER" value="^Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" />
+      <module name="InfoTechHomeworksTestNG" />
+      <option name="NAME_FILTER" value="^Toplam ürün sayısını ASSERT edin$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Toplam ürün sayısını ASSERT edin$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Toplam ürün sayısını ASSERT edin" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -72,6 +83,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InfoTechHomeworksTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,24 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework06.test02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework06" />
-      <option name="METHOD_NAME" value="test02" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Homework06.test03" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InfoTechHomeworksSelenium" />
       <extension name="coverage">
@@ -147,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.runner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Toplam ürün sayısını ASSERT edin" />
         <item itemvalue="JUnit.runner" />
-        <item itemvalue="Cucumber Java.Scenario: Kullanici sepetteki iki urunden bir tanesini siler ve sepet simgesi uzerindeki sayinin bir eksildigini gorur" />
         <item itemvalue="TestNG.Homework05.dragAndDrop" />
         <item itemvalue="TestNG.Homework06.test03" />
-        <item itemvalue="TestNG.Homework06.test02" />
       </list>
     </recent_temporary>
   </component>
