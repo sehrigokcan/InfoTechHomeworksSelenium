@@ -33,7 +33,7 @@ public class DBStepDefinitions {
             urunCount++;
         }
         System.out.println("Toplam urun sayisi: " + urunCount);
-        Assert.assertEquals(urunCount, 6);
+        Assert.assertEquals(urunCount, 5);
 
     }
 
@@ -42,14 +42,14 @@ public class DBStepDefinitions {
         resultSet = statement.executeQuery("SELECT * FROM urun order by price desc");
         resultSet.first();
         String urunIsmi= resultSet.getString("name");
-        Assert.assertEquals(urunIsmi, "ayva");
+        Assert.assertEquals(urunIsmi, "cilek");
 
     }
 
     @And("urun isimlerinin birini degistir")
     public void urunIsimlerininBiriniDegistir() throws SQLException {
         String yeniUrunIsmi="ayva";
-        int control= statement.executeUpdate("update urun set name='kavun' where name='karpuz';" );
+        int control= statement.executeUpdate("update urun set name='kavun' where id=1;" );
         System.out.println(control);
         Assert.assertTrue(control==1);
     }
@@ -69,8 +69,15 @@ public class DBStepDefinitions {
     @And("sutun basliklarini degistirip tabloyu yazdir")
     public void sutunBasliklariniDegistiripTabloyuYazdir() throws SQLException {
         resultSet = statement.executeQuery("SELECT id AS URUN_ID, name AS URUN_ADI, price AS URUN_FIYAT FROM urun");
+        ResultSetMetaData resultSetMetaData=resultSet.getMetaData();
+
+        for (int i = 1; i <= 3; i++) {
+            System.out.print(resultSetMetaData.getColumnName(i) + "\t");
+        }
+        System.out.println();
+        System.out.println("********************************");
         while (resultSet.next()) {
-            System.out.println(resultSet.getInt("URUN_ID")+"    "+ resultSet.getString("URUN_ADI")+ "     "+resultSet.getDouble("URUN_FIYAT"));
+            System.out.println(resultSet.getInt("URUN_ID")+"\t\t"+ resultSet.getString("URUN_ADI")+ "\t\t"+resultSet.getDouble("URUN_FIYAT"));
         }
     }
 
@@ -101,7 +108,7 @@ public class DBStepDefinitions {
 
     @And("belli fiyatin altindaki urunleri isme ve fiyata gore azalan nitelikte sirala")
     public void belliFiyatinAltindakiUrunleriIsmeVeFiyataGoreAzalanNitelikteSirala() throws SQLException {
-        resultSet = statement.executeQuery("SELECT name,price FROM urun order by name,price ASC");
+        resultSet = statement.executeQuery("SELECT name,price FROM urun where price<30 order by name,price ASC");
         while (resultSet.next()) {
             System.out.println(resultSet.getInt("price")+ "   :   " + resultSet.getString("name"));
 

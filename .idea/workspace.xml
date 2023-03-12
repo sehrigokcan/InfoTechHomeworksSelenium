@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DatabaseQuery.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DatabaseQuery.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.override.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/formatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +46,18 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/sehri/IdeaProjects/SeleniumProject/InfoTechHomeworksTestNG/src/test/java/stepdefinitions",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sehri/IdeaProjects/SeleniumProject/InfoTechHomeworksTestNG/src/test/java/stepdefinitions&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sehri\IdeaProjects\SeleniumProject\InfoTechHomeworksTestNG\src\test\java\resources" />
@@ -104,6 +111,17 @@
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.runner" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
