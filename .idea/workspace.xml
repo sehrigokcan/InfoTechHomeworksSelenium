@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/chosen.override.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/formatter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/vis-timeline-graph2d.override.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

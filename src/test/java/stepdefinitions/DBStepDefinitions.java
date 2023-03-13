@@ -34,7 +34,6 @@ public class DBStepDefinitions {
         }
         System.out.println("Toplam urun sayisi: " + urunCount);
         Assert.assertEquals(urunCount, 5);
-
     }
 
     @Then("en yuksek fiyatli urunu assert edin")
@@ -61,7 +60,7 @@ public class DBStepDefinitions {
         while (resultSet.next()) {
             toplam+=resultSet.getDouble("price");
         }
-        double ort= toplam/6;
+        double ort= toplam/5;
         System.out.println(" Ortalama:"+ ort);
 
     }
