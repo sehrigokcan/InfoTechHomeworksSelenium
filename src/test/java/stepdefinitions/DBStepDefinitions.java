@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import utilities.ConfigReader;
+import utilities.ReUsableMethods;
 
 import java.sql.*;
 
@@ -123,13 +124,12 @@ public class DBStepDefinitions {
     @When("employees isminde tablo olustur")
     public void employeesIsmindeTabloOlustur() throws SQLException {
 
-        String sql= " CREATE TABLE employees \n" +
-                "( \n" +
-                " id number(9), \n" +
-                " name varchar2(50), \n" +
-                " state varchar2(50), \n" +
-                " salary number(20), \n" +
-                " company varchar2(20) \n" +
+        String sql= " CREATE TABLE employees (" +
+                " id int, \n" +
+                " name varchar(50), \n" +
+                " state varchar(50), \n" +
+                " salary int, \n" +
+                " company varchar(20) \n" +
                 ");";
         boolean tabloOlustuMu= statement.execute(sql);
         System.out.println(" Tablo Olustu mu?"+ tabloOlustuMu);
@@ -157,29 +157,47 @@ public class DBStepDefinitions {
     }
 
     @When("ID numarasinin sonu cift sayi olan satirlarin bilgilerini tablo olarak getirin")
-    public void idNumarasininSonuCiftSayiOlanSatirlarinBilgileriniTabloOlarakGetirin() {
-
+    public void idNumarasininSonuCiftSayiOlanSatirlarinBilgileriniTabloOlarakGetirin() throws SQLException {
+        resultSet= statement.executeQuery("select * from employees where mod(id,2)=0; ");
+        while(resultSet.next()){
+            System.out.println(resultSet.getInt("id")+ "  "+ resultSet.getString("name")+ " "+ resultSet.getString("state")+ "  "+ resultSet.getInt("salary")+ "  "+ resultSet.getString("company"));
+        }
     }
 
     @And("Tablodaki toplam satir sayisini bulunuz")
     public void tablodakiToplamSatirSayisiniBulunuz() throws SQLException {
-        resultSet= statement.executeQuery(" select count(*) as satirSayisi from employees");
-        System.out.println(" Tablodaki toplam satir sayisi: "+ resultSet.getString("satirSayisi"));
+        resultSet= statement.executeQuery(" select count(*) as toplamSatir from employees");
+        resultSet.next();
+        System.out.println(resultSet.getInt("toplamSatir"));
     }
 
     @And("Tablodaki maksimum maasi bulunuz")
-    public void tablodakiMaksimumMaasiBulunuz() {
+    public void tablodakiMaksimumMaasiBulunuz() throws SQLException {
+        resultSet= statement.executeQuery(" select max(salary) AS maas from employees");
+        resultSet.next();
+        System.out.println(resultSet.getInt("maas"));
     }
 
     @And("Tablodaki ikinci maksimum maasi bulunuz")
-    public void tablodakiIkinciMaksimumMaasiBulunuz() {
+    public void tablodakiIkinciMaksimumMaasiBulunuz() throws SQLException {
+        resultSet= statement.executeQuery(" select salary AS maas from employees order by salary desc");
+        resultSet.next();
+        resultSet.next();
+        System.out.println(resultSet.getInt("maas"));
     }
 
     @And("Tablodaki maksimum maasa sahip satirin tüm bilgilerini getiriniz")
-    public void tablodakiMaksimumMaasaSahipSatirinTümBilgileriniGetiriniz() {
+    public void tablodakiMaksimumMaasaSahipSatirinTümBilgileriniGetiriniz() throws SQLException {
+        resultSet= statement.executeQuery("select * from employees where salary= (select max(salary) from employees)");
+        resultSet.next();
+        System.out.println(resultSet.getInt("id")+ "  "+ resultSet.getString("name")+ " "+ resultSet.getString("state")+ "  "+ resultSet.getInt("salary")+ "  "+ resultSet.getString("company"));
+
     }
 
     @And("Tablodaki maksimum ikinci maasa sahip satirin tum bilgilerini getiriniz")
-    public void tablodakiMaksimumIkinciMaasaSahipSatirinTumBilgileriniGetiriniz() {
+    public void tablodakiMaksimumIkinciMaasaSahipSatirinTumBilgileriniGetiriniz() throws SQLException {
+        resultSet= statement.executeQuery("select * from employees where salary=(select max(salary) from employees where salary<>(select max(salary) from employees))");
+        resultSet.next();
+        System.out.println(resultSet.getInt("id")+ "  "+ resultSet.getString("name")+ " "+ resultSet.getString("state")+ "  "+ resultSet.getInt("salary")+ "  "+ resultSet.getString("company"));
     }
 }

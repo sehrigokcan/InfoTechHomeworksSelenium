@@ -1,15 +1,17 @@
-Feature : DatabaseQuery
+
+Feature: Database Query
 
   Background:
     Given user connects to the database
 
     Scenario: Tablo olusturma ve kayit ekleme
       When employees isminde tablo olustur
-      And tabloya verileri ekle
+      Then tabloya verileri ekle
 
+  @dbQuery2
       Scenario: Sorgular
         When ID numarasinin sonu cift sayi olan satirlarin bilgilerini tablo olarak getirin
-        And ID numarasinin sonu cift sayi olan satirlarin bilgilerini tablo olarak getirin
+        Then ID numarasinin sonu cift sayi olan satirlarin bilgilerini tablo olarak getirin
         And Tablodaki toplam satir sayisini bulunuz
         And Tablodaki maksimum maasi bulunuz
         And Tablodaki ikinci maksimum maasi bulunuz

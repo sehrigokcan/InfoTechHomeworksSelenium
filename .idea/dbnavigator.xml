@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,7 +13,14 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="fe6745a0-eba8-4b45-ad21-3358ee5b934b">
-      <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
+      <console name="Connection" type="STANDARD" schema="postgres" session="Main"><![CDATA[CREATE TABLE employees \n" +
+                "( \n" +
+                " id int(9), \n" +
+                " name varchar2(50), \n" +
+                " state varchar2(50), \n" +
+                " salary int(20), \n" +
+                " company varchar2(20) \n" +
+                ");]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -34,7 +41,7 @@
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="14.7" />
+          <database-version value="15.2" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
@@ -510,5 +517,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>

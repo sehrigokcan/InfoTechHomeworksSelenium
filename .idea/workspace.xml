@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ded64d8-71ef-42d8-bce7-12ed834df9cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/DBQ02.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DBStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReUsableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReUsableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/DBQ02.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DBQ02.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +57,35 @@
       <recent name="C:\Users\sehri\IdeaProjects\SeleniumProject\InfoTechHomeworksTestNG\target" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: DBQ02">
+  <component name="RunManager" selected="JUnit.runner (1)">
     <configuration name="Feature: DBQ02" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/DBQ02.feature" />
+      <option name="GLUE" value="stepdefinitions runners" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="InfoTechHomeworksTestNG" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: DBQ02" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Tablo olusturma ve kayit ekleme" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/DBQ02.feature" />
+      <option name="GLUE" value="stepdefinitions runners" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="InfoTechHomeworksTestNG" />
+      <option name="NAME_FILTER" value="^Tablo olusturma ve kayit ekleme$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Tablo olusturma ve kayit ekleme$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Tablo olusturma ve kayit ekleme" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -122,31 +147,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework05.dragAndDrop" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InfoTechHomeworksSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Homework05" />
-      <option name="METHOD_NAME" value="dragAndDrop" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: DBQ02" />
         <item itemvalue="JUnit.runner (1)" />
+        <item itemvalue="Cucumber Java.Feature: DBQ02" />
+        <item itemvalue="Cucumber Java.Scenario: Tablo olusturma ve kayit ekleme" />
         <item itemvalue="Cucumber Java.Scenario: Toplam ürün sayısını ASSERT edin" />
         <item itemvalue="JUnit.runner" />
-        <item itemvalue="TestNG.Homework05.dragAndDrop" />
       </list>
     </recent_temporary>
   </component>

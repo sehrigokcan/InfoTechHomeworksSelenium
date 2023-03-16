@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources",
         glue = "stepdefinitions",
-        tags = "@dbQuery",
+        tags = "@dbQuery2",
         dryRun = false
 
 )

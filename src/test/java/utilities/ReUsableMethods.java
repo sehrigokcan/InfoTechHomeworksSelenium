@@ -27,26 +27,6 @@ public class ReUsableMethods {
 
     }
 
-    //Sütun Değerlerini List içerisine alan method
-    public static List<Object> getColumnList(String columnName, String tableName, String query) {
-
-        List<Object> columnData = new ArrayList<>();//ResultSet'ten alınan datanın koyulacağı List.
-
-        //SELECT        id          FROM      students
-        //String query = "SELECT " + columnName + " FROM " + tableName;
-
-        executeQuery(query);// => Bu method üstte oluşturuldu. Query'yi çalıştırıp alınan datayı 'resultSet' container'ı içine atama yapıyor.
-
-        try {
-            while (resultSet.next()) {
-                columnData.add(resultSet.getObject(columnName));//add methodu ile alınan sütun değerlerini List'e ekliyor.
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return columnData;
-    }
 
     //ExecuteQuery methodu
     public static ResultSet executeQuery(String query) {
